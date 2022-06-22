@@ -20,21 +20,13 @@ public class OGWavePackage implements ReactPackage {
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
 
-
-
         return modules;
-    }
-
-    @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
     }
 
     @Override
     public List<ViewManager> createViewManagers(
             ReactApplicationContext reactContext) {
         return Arrays.<ViewManager>asList(
-                new OGWaveManager()
-        );
+                new OGWaveManager());
     }
 }
